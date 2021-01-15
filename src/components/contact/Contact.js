@@ -1,9 +1,16 @@
+/* 
+  The import statements import all required library in order for
+  the component to work properly
+*/
 import React from 'react';
 import {Animated} from "react-animated-css";
 import Address from '../../img/address.png';
 import Phone from '../../img/contact.png';
 import Mail from '../../img/mail.png';
 
+/* 
+    This is a functional component that return JSX component to where it will be called to use.
+*/
 const Contact = () => {
     return (
         <div className="page-container">
@@ -40,4 +47,5 @@ const Contact = () => {
     );
 }
 
+// We export the component as default
 export default Contact;

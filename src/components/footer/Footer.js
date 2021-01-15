@@ -9,3 +9,8 @@ const Footer = () => {
 }
 
 export default Footer;
+
+/* 
+    At the moment, this component is not in use, but we want to keep it
+    here as maybe we are gonna need it soon
+*/

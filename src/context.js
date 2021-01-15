@@ -1,23 +1,15 @@
+/* 
+    This context module playing its role as Context API where we
+    put data of page and its url, so that it can be used in navigation
+    bar components. The module exported Provider class that will be 
+    used as a components that will wrap our App components. At the end
+    of this module, Consumer is also exported as navigation bar will 
+    need to use it to consume data from Context API.
+*/
+
 import React, {Component} from 'react';
 
 const Context = React.createContext();
-
-/* 
-const reducer = (state, action) => {
-    switch (action.type) {
-        case 'DELETE_CONTACT':
-            return {
-                ...state,
-                contacts: state.contacts.filter(
-                    contact => contact.id !== action.payload
-                )
-            }
-    
-        default:
-            return state;
-    }
-}
- */
 
 export class Provider extends Component {
     state = {
@@ -62,8 +54,7 @@ export class Provider extends Component {
                 title: 'Contact Us',
                 url: '/contact'
             },
-        ],
-        // dispatch: action => this.setState(state => reducer(state, action))
+        ]
     }
 
     render() {

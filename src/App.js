@@ -2,11 +2,12 @@
   The import statements import all required library in order for
   the website to work properly
 */
+
+// We import components from react-router-domm to use it for multi page navigation
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import './css/App.css';
 
 import Navbar from './components/navbar/Navbar';
-// import Footer from './components/footer/Footer';
 import Start from './components/start/Start';
 import About from './components/about/About';
 import Term from './components/term/Term';
@@ -49,6 +50,11 @@ import {
   faAward
 } from '@fortawesome/free-solid-svg-icons';
 
+/* 
+  Here we import Provider to use it and wrap all components in App 
+  component, so that any component in it can use Consumer component
+  to wrap their own component to be able to consume data from context API
+*/
 import { Provider } from './context';
 
 // The library add function used to add imported icon into the FontAwesome
@@ -105,7 +111,6 @@ function App() {
                 <Route exact path='/contact' component={Contact} />
               </Switch>
             </div>
-            {/* <Footer /> */}
           </div>
         </div>
       </Router>

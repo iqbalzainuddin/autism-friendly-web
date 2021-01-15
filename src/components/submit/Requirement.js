@@ -1,7 +1,14 @@
+/* 
+  The import statements import all required library in order for
+  the component to work properly
+*/
 import React from 'react';
 import { Animated } from 'react-animated-css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
+/* 
+    This is a functional component that return JSX component to where it will be called to use.
+*/
 const Requirement = () => {
     return (
         <Animated animationIn="bounceInLeft" animationOut="fadeOut" isVisible={true}>
@@ -16,4 +23,5 @@ const Requirement = () => {
     );
 }
 
+// We export the component as default
 export default Requirement;

@@ -1,7 +1,14 @@
+/* 
+  The import statements import all required library in order for
+  the component to work properly
+*/
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { Link } from 'react-router-dom';
 
+/* 
+    This is a functional component that return JSX component to where it will be called to use.
+*/
 const Right = () => {
     return (
         <div className="start-right">
@@ -16,4 +23,5 @@ const Right = () => {
     );
 }
 
+// We export the component as default
 export default Right;
